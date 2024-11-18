@@ -1,0 +1,71 @@
+plugins {
+    id "com.android.application"
+    // FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.plant"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.plant"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        
+        // Add multidex support
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            // Signing config
+            signingConfig signingConfigs.debug
+            
+            // Optimization settings
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    // Add this block to support MaterialComponents theme
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // Add these dependencies
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    
+    // Multidex support
+    implementation 'androidx.multidex:multidex:2.0.1'
+    
+    // Firebase dependencies will be automatically added by google-services plugin
+    
+    // If you're using specific Firebase products, add them here
+    // implementation platform('com.google.firebase:firebase-bom:32.7.0')
+}
+
+flutter {
+    source = "../.."
+}

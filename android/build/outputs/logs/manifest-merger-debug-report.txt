@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml:2:13-83
+INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml:2:13-83
+	package
+		INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml
+	xmlns:android
+		ADDED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml:2:23-81
+uses-sdk
+INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml reason: use-sdk injection requested
+INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml
+INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml
+	android:targetSdkVersion
+		INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml
+	android:minSdkVersion
+		INJECTED from /Users/apple/flutter_projects/Own Projects/plant/android/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10674047560243724226.xml
